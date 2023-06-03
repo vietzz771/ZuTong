@@ -18,11 +18,11 @@
 }
 
 .font-special {
-  font-family: "Pinyon Script", cursive;
+  font-family: "Montserrat", cursive;
 }
 
 .font-header {
-  font-family: "Prata", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -259,5 +259,15 @@ i {
 }
 .hero {
   padding-top: 100px;
-  padding-bottom: 30px;
+  background-color: #ededed;
+}
+#services {
+  padding: 100px 0px;
+}
+.aboutme {
+  padding: 50px 0px;
+  padding-bottom: 20px;
+}
+.progress {
+  background-color: white;
 }

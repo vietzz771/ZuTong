@@ -16,6 +16,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/x-icon"
@@ -48,7 +54,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link hvr-underline-from-left text-primary" href="#"
+              <a
+                class="nav-link hvr-underline-from-left text-primary"
+                href="#hero"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
@@ -88,7 +96,7 @@
       </div>
     </nav>
 
-    <section class="bg-gradient hero" id="aboutme">
+    <section class="hero" id="hero">
       <div class="container">
         <div class="row">
           <div class="col-sm-11">
@@ -100,8 +108,70 @@
         </div>
       </div>
     </section>
+    <section class="aboutme bg-gradient" id="aboutme">
+      <div class="container">
+        <h1 class="text-center mb-4">About Me</h1>
+        <div class="about-content">
+          <img src="IMAGES/portfolio-02.png" class="w-100" alt="" />
+          <div class="about-progess">
+            <h3 class="pt-3">Photoshop</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-info"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                90%
+              </div>
+            </div>
+            <h3 class="pt-3">Illustration</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                60%
+              </div>
+            </div>
+            <h3 class="pt-3">Web Design</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-danger"
+                role="progressbar"
+                style="width: 80%"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+            <h3 class="pt-3">App Design</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-dark"
+                role="progressbar"
+                style="width: 85%"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                85%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="services" class="py-5 bg-gradient">
+    <section id="services" class="bg-gradient">
       <div class="container">
         <h1 class="text-center mb-4">Services I can Do</h1>
         <div class="row">
