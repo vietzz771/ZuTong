@@ -256,6 +256,12 @@ i {
     bottom: -50%;
     right: 0;
   }
+  .aboutme {
+    padding-top: 100px !important;
+  }
+  .hero {
+    padding-bottom: 60px !important;
+  }
 }
 .hero {
   padding-top: 100px;
