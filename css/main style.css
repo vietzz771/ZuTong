@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  scroll-behavior: smooth;
+}
+.bg-tsuot {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(242, 237, 207, 0.6); */
+}
+
+.bg-gradient {
+  background: rgb(242, 237, 207);
+  background: radial-gradient(
+    circle,
+    rgba(242, 237, 207, 1) 0%,
+    rgba(240, 239, 238, 1) 100%
+  );
+}
+
+.font-special {
+  font-family: "Pinyon Script", cursive;
+}
+
+.font-header {
+  font-family: "Prata", serif;
+}
+
+a {
+  color: #054c77;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.font-phu {
+  color: #959595;
+  font-weight: 300;
+}
+
+/*
+.thanhdoc{
+	position: absolute; width: 5px; height: 1000px; background: #E290CB;
+	left: 20%; top: 0; z-index: 99999;
+	animation-name: chay;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes chay{
+	0%{transform:translate(0,0) rotate(0) scale(1)}
+	30%{transform:translate(1500px,0) rotate(0) scale(1)}
+	50%{transform:translate(200px,0) rotate(45deg) scale(1)}
+	80%{transform:translate(1800px,0) rotate(-45deg) scale(1)}
+	0%{transform:translate(0,0) rotate(0) scale(1)}
+}
+*/
+
+/*
+#hero{position: relative}
+.vtron{
+	width: 100px; height: 100px; border: 2px dotted #fff; background: #EB68CF;
+	position: absolute; right: 27%; top: 10%; border-radius: 20px;
+	animation: xoay 5s infinite;
+}
+
+@keyframes xoay{
+	0%{transform: rotate(0) scale(0)}
+	50%{transform: rotate(360deg) scale(10)}
+	0%{transform: rotate(0)}
+*/
+/* } */
+
+.timeline {
+  border-left: 3px solid #727cf5;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgba(114, 124, 245, 0.09);
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 40%;
+}
+
+@media (max-width: 767px) {
+  .timeline {
+    max-width: 98%;
+    padding: 25px;
+  }
+}
+
+.timeline h1 {
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.timeline .event {
+  border-bottom: 1px dashed #e8ebf1;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .timeline .event {
+    padding-top: 30px;
+  }
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -207px;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+@media (max-width: 767px) {
+  .timeline .event:before {
+    left: 0px;
+    text-align: left;
+  }
+}
+
+.timeline .event:after {
+  -webkit-box-shadow: 0 0 0 3px #727cf5;
+  box-shadow: 0 0 0 3px #727cf5;
+  left: -55.8px;
+  background: #fff;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  content: "";
+  top: 5px;
+}
+
+@media (max-width: 767px) {
+  .timeline .event:after {
+    left: -31.8px;
+  }
+}
+
+.rtl .timeline {
+  border-left: 0;
+  text-align: right;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+  left: 0;
+  right: -170px;
+}
+
+.rtl .timeline .event::after {
+  left: 0;
+  right: -55.8px;
+}
+
+i {
+  animation: star 5s infinite;
+}
+
+@keyframes star {
+  0% {
+    transform: rotate(0) scale(0);
+  }
+  50% {
+    transform: rotate(360deg) scale(2);
+  }
+  0% {
+    transform: rotate(0);
+  }
+}
+.navbar-collapse {
+  flex-grow: unset;
+}
+.btn-phone {
+  background-color: #054c77;
+  color: rgb(253, 169, 12);
+  border-radius: 10px;
+}
+.btn-phone:hover {
+  color: white;
+}
+.text-menu {
+  margin-bottom: 0;
+}
+.border-menu {
+  border-bottom: 2px solid #054c77;
+  margin-bottom: 3px;
+}
+
+.text-brand {
+  color: #dca44f;
+}
+.text-laika {
+  color: #e7aa32;
+}
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background-color: #dca44f;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+#projects {
+  padding-bottom: 100px;
+}
+.text-3sip {
+  color: #ad1414;
+}
+.crys img {
+  height: 200px;
+}
+.avatar {
+  position: relative;
+}
+.avt-text {
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+}
+@media (max-width: 430px) {
+  .avt-text {
+    position: relative;
+    bottom: -50%;
+    right: 0;
+  }
+}
+.hero {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
